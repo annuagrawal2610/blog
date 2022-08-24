@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+
+body{
+    font-family: "Arial","Verdana";
+    font-size: 18px;
+}
+
+
+
+h1,h2{
+    
+    color: rgba(128, 54, 0, 0.79);
+}
+
+
+h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+.main-text{
+   text-align: justify; 
+    margin-bottom: 20px;
+}
+
+.author-text{
+    font-size: 20px;
+     float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.main-post {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+    position: relative;
+/*    relative is use for setting the child position of particular parent div. All child will be related to its parent*/
+}
+
+.container {
+    max-width: 1140px;
+    margin: 15px auto 0 auto;
+/*  
+    1140px is the standard width for website.
+    margin-left and margin-right are used for centering the website.
+*/
+}
+
+.other-post {
+
+    width: 25%;
+    float: left;
+}
+
+.author-post {
+border-top: 1px solid #5f5f5f;
+    
+
+}
+
+.author-post img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+/*    we can use parent class selector for changing in child class*/
+    float: left;
+
+}
+
+
+.clearfix:after{
+    content: "";
+    display: table; 
+/*    it takes hight and width of main post.*/
+    clear:both;
+}
+.others {
+    margin-bottom: 40px;
+}
+
+.date {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
